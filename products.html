@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>commerce</title>
+    <link rel="stylesheet" href="./commmercestylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main d-flex">
+      <div class="sidebar border-end shadow-sm" style="width: 22%">
+        <div class="head">
+          <div class="head_icon">
+            <p>A</p>
+          </div>
+          <div class="head_text">
+            <p>Welcome Back</p>
+            <p>admin John perira</p>
+          </div>
+        </div>
+        <div
+          class="sidebar_option_1 sidebar_option d-grid gap-2 sidebar_option border-bottom border-top border-secondary border-opacity-10 py-3"
+        >
+          <a href="./commerce.html" class="d-flex gap-2 href"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAhQAAAIUB4uz/wQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADESURBVEiJ1dWxDcJAEATAATlGdEEHBGQEdAJUQAHOKYFCCGmDMjAJoQl4CSc850cgs9JLPnlX+7rbs2GLBm3mNNh4IqwZpYczTl5jiRmmqe6j0aLOEKX3bacOa8ZvSB/j/w0qXLHCLcNbeQy2yGCHPRYZXpN4RQaHdL6Cnwy5ZJPDqDz6H9nKvYJWVpjgKL+ZNeadOpy8qu+NEsLJKzUIJ2+wn4pw8kpbFE5eqUE4eYOdwXAMSv8HvTQbXOQjd8G6Iw5r7hQLZauMEXu8AAAAAElFTkSuQmCC"
+              alt="dashboard icon"
+            />
+            Dashboard</a
+          >
+        </div>
+        <div
+          class="Sidebar_option_2 sidebar_option sidebar_option border-bottom border-secondary border-opacity-10 py-3"
+        >
+          <a href="./products.html" class="href d-flex gap-2"
+            ><img
+              src="https://th.bing.com/th/id/OIP.07DUnE60ZtI7251ulRVYpQHaHU?w=208&h=205&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              id="shipping_cart"
+              alt="shopping cart"
+            />
+            Products</a
+          >
+        </div>
+        <div
+          class="Sidebar_option_3 sidebar_option sidebar_option border-bottom border-secondary border-opacity-10 py-3"
+        >
+          <a href="./addProduct.html" class="href d-flex gap-2"
+            ><img
+              src="https://th.bing.com/th/id/OIP.nZR0ot7d2fo15aiZn5L2mQHaH_?w=143&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              alt="add icon"
+            />
+            Add Products</a
+          >
+        </div>
+        <div
+          class="Sidebar_option_4 sidebar_option sidebar_option border-bottom border-secondary border-opacity-10 py-3"
+        >
+          <a href="./orders.html" class="href d-flex gap-2"
+            ><img
+              src="https://th.bing.com/th/id/OIP.07DUnE60ZtI7251ulRVYpQHaHU?w=208&h=205&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              id="shipping_cart"
+              alt="shopping cart"
+            />
+            Orders</a
+          >
+        </div>
+        <div
+          class="Sidebar_option_5 sidebar_option sidebar_option border-bottom border-secondary border-opacity-10 py-3"
+        >
+          <a href="./users.html" class="href d-flex gap-2"
+            ><img
+              src="https://th.bing.com/th/id/OIP.07DUnE60ZtI7251ulRVYpQHaHU?w=208&h=205&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              id="shipping_cart"
+              alt="shopping cart"
+            />
+            Users</a
+          >
+        </div>
+        <div
+          class="Sidebar_option_6 sidebar_option sidebar_option border-bottom border-secondary border-opacity-10 py-3"
+        >
+          <a href=" " class="href d-flex gap-2"
+            ><img
+              src="https://th.bing.com/th/id/OIP.07DUnE60ZtI7251ulRVYpQHaHU?w=208&h=205&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              id="shipping_cart"
+              alt="shopping cart"
+            />
+            Log out</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="panelBottom pt-2 w-75"
+        style="
+          padding-left: 70px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        "
+      >
+        <div class="panelProducts p-2">
+          <div
+            class="panelProductHead d-flex align-items-center justify-content-between"
+          >
+            <h3 style="font-weight: 600">Product list</h3>
+            <!-- <button class="btn btn-primary"> -->
+            <a href="./addProduct.html" class="btn btn-primary d-flex gap-2"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAQAAAAa7ikwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmCgYKMjc7SGHqAAAAp0lEQVRIx+2UOw6EMAxExwgJ5Rw0iITzcEaOgysoyE3IbBEJUaxY74dipUw1hUfPsmwDRpHOkarkPJPOWXNmkd7zkPfWXGUniDz1PwN8qAIogO9V56vsOqB6AWvbw0rfk01zXZ8SsCxCqgLDcE//qhVA3jcgUt4b0TRlP47Atl3X7zuwrvZeUgjHr0shWHP/v6YFUAAnyenixX79tb2XGAHV/FpitKYet1ROTlDGKGoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTAtMDZUMTA6NTA6NTUrMDA6MDDiupEnAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEwLTA2VDEwOjUwOjU1KzAwOjAwk+cpmwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0xMC0wNlQxMDo1MDo1NSswMDowMMTyCEQAAAAASUVORK5CYII="
+                alt="add icon"
+              />
+              Add Product</a
+            >
+            <!-- </button> -->
+          </div>
+        </div>
+        <div class="productsCard shadow">
+          <div class="productsCard_table">
+            <table class="w-100 table_add">
+              <thead>
+                <tr class="bg-body-secondary w-100">
+                  <th>Name</th>
+                  <th>Created At</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="w-100">
+                  <td>product</td>
+                  <td>nov 21</td>
+                  <td>6</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="panelEdit py-3 gap-2"
+        style="
+          padding-left: 50px;
+          padding-right: 50px;
+          display: none;
+          flex-direction: column;
+        "
+      >
+        <div class="EditHead">
+          <h3>Create Product</h3>
+        </div>
+        <form
+          class="shadow-sm border rounded px-4 d-grid mt-2 mb-2"
+          style="padding-top: 30px; padding-bottom: 30px"
+        >
+          <div class="d-grid bottom_form">
+            <div class="">
+              <label for="Product_name" class="form-label">Product Name</label>
+              <input
+                type="Text"
+                class="form-control"
+                id="Product_name"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="">
+              <div class="form-label-input mb-3">Gender</div>
+              <div id="Gender" class="gender">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="Male"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="Female"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Female</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio3"
+                    value="Unisex"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Unisex</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <label for="Description" class="form-label">Description</label>
+              <input
+                type="Text"
+                class="form-control"
+                id="Description"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="" id="color">
+              <div class="mt-2">Color</div>
+              <div class="form-check form-check-inline mt-2">
+                <input
+                  class="form-check-input form-check-input-colors"
+                  type="checkbox"
+                  name="inlineRadioOptions"
+                  id="inlineCheckbox1"
+                  value="Black"
+                />
+                <label class="form-check-label" for="inlineCheckbox1"
+                  >Black</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input form-check-input-colors"
+                  type="checkbox"
+                  name="inlineRadioOptions"
+                  id="inlineCheckbox2"
+                  value="white"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >White</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input form-check-input-colors"
+                  type="checkbox"
+                  name="inlineRadioOptions"
+                  id="inlineCheckbox3"
+                  value="blue"
+                />
+                <label class="form-check-label" for="inlineCheckbox3"
+                  >Blue</label
+                >
+              </div>
+            </div>
+            <div class="">
+              <label for="Brand" class="form-label">Brand</label>
+              <input
+                type="Text"
+                class="form-control"
+                id="Brand"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <div id="dress2">
+              <div class="form-label m-1 dress" for="dress">Category</div>
+              <select
+                class="form-select"
+                id="dress"
+                aria-label="Default select example"
+                name="dress"
+              >
+                <option selected>Shorts</option>
+                <option value="Shorts">Shorts</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Tanks">Tanks</option>
+              </select>
+            </div>
+            <div class="">
+              <label for="Quantity" class="form-label m-1">Quantity</label>
+              <input
+                type="number"
+                min="0"
+                max="16"
+                class="form-control"
+                id="Quantity"
+                aria-describedby="emailHelp"
+                name="Quantity"
+              />
+            </div>
+
+            <div class="">
+              <label for="Price" class="form-label m-1">Price</label>
+              <input
+                type="number"
+                min="0"
+                max="10000"
+                class="form-control"
+                id="Price"
+                aria-describedby="emailHelp"
+                name="Price"
+              />
+            </div>
+            <div
+              class="upload bg-body-tertiary p-2 d-grid gap-2 align-items-center"
+            >
+              <label for="fileInput" class="editUpload d-flex p-4">
+                <input
+                  type="file"
+                  id="fileInput"
+                  class="UploadText"
+                  accept="image/*"
+                  style="display: none"
+                />
+                <div class="UploadImage w-100">
+                  <img
+                    src="./upload.007e610df6259b36a6feb48d1ef02893.svg"
+                    alt="upload"
+                  />
+                </div>
+                <div
+                  class="UploadText d-flex flex-column align-items-center p-2"
+                >
+                  <h3>Drop or Select file</h3>
+                  <p>Drop files here or click browse through your machine</p>
+                </div>
+              </label>
+              <div class="edit"></div>
+            </div>
+          </div>
+          <button
+            type="submit"
+            id="create"
+            class="btn btn-success"
+            style="width: 8%; margin-left: 1060px"
+          >
+            Create
+          </button>
+        </form>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/fireBase-Config.js"></script>
+    <script type="module" src="./js/products.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

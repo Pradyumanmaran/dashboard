@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  border: 0px;
+  font-family: sans-serif;
+}
+.sidebar img {
+  width: 18px;
+}
+.href {
+  text-decoration: none;
+  color: black; /* Set your preferred color */
+  /* gap: 8px; */
+}
+.sidebar {
+  min-height: 100vh;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+
+.head {
+  display: flex;
+  gap: 15px;
+}
+.head_icon {
+  background: #3838f0;
+  border-radius: 50%;
+  display: grid;
+  height: 40px;
+  place-items: center;
+  width: 40px;
+  justify-content: center;
+}
+.head_icon p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.head_text p:first-child {
+  color: #5a5757;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.head_text p:last-child {
+  color: #5a5757;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#shipping_cart {
+  width: 18px;
+}
+.sidebar_option {
+  gap: 8px;
+}
+.sidebar_option:hover {
+  cursor: pointer;
+  padding-left: 15px;
+  transition: smooth;
+  transform: translateX(-10px);
+}
+.card_text p {
+  margin-bottom: 0;
+}
+.card_icon {
+  background-color: rgba(115, 103, 240, 0.12);
+  border-radius: 50%;
+  display: grid;
+  height: 55px;
+  place-items: center;
+  width: 55px;
+}
+.stats_card {
+  gap: 10px;
+}
+.bottom_form {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 20px;
+  /* width: 1170px; */
+}
+.formadd {
+  width: 1170px;
+}
+table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 2px; /* Set the desired column gap */
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
